@@ -1,0 +1,19 @@
+{
+    "name": "samnanullahjan/sockifychat",
+    "description": "SockifyChat is a comprehensive chat system package for Laravel applications, offering real-time messaging, group chat functionality, and voice communication capabilities. Enhance your application with robust and scalable chat solutions, seamlessly integrating user interactions.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Samnanullahjan\\Sockifychat\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samnan Ullah Jan",
+            "email": "jansamnan2@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
