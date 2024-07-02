@@ -1,19 +1,62 @@
 {
     "name": "samnanullahjan/sockifychat",
     "description": "SockifyChat is a comprehensive chat system package for Laravel applications, offering real-time messaging, group chat functionality, and voice communication capabilities. Enhance your application with robust and scalable chat solutions, seamlessly integrating user interactions.",
+    "keywords": ["chat system", "chat package", "chatify","voice chat","video chat","sockifychat"],
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Samnanullahjan\\Sockifychat\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Samnan Ullah Jan",
             "email": "jansamnan2@gmail.com"
         }
     ],
+    "support": {
+        "issues": "https://github.com/laravel/cashier/issues",
+        "source": "https://github.com/laravel/cashier"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "illuminate/console": "^10.0|^11.0",
+        "illuminate/contracts": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0",
+        "illuminate/log": "^10.0|^11.0",
+        "illuminate/notifications": "^10.0|^11.0",
+        "illuminate/pagination": "^10.0|^11.0",
+        "illuminate/routing": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/view": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.18|^9.0",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Samnanullahjan\\Sockifychat\\": "src/",
+            "Samnanullahjan\\Sockifychat\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Samnanullahjan\\Sockifychat\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v1.0.1"
+        },
+        "laravel": {
+            "providers": [
+                "Samnanullahjan\\Sockifychat\\CashierServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true
 }
